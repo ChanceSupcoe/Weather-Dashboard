@@ -108,7 +108,7 @@ $("#searchBtn").click(function (event){
             $("#currentWindResponse").append(response.current.wind_speed, "MPH");
             $("#currentHumidityResponse").append(response.current.humidity, "%");
             $("#currentUVResponse").append(response.current.uvi);
-
+            
             $("#forecastDate0Response").append(response.daily[0].dt, "UTC");
             $("#forecastImage0Response").append(response.daily[0].weather[0].main);
             $("#forecastTemp0Response").append(response.daily[0].temp.day, "K");
@@ -160,4 +160,3 @@ function search() {
    $("ul").append(searchHistorylist);
    $("#cityInput").val("");
 }
-
