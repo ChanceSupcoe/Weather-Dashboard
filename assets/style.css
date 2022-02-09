@@ -1,10 +1,24 @@
 .header {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: #014f9d;
     color: white;
 }
 
 .forecastheader {
     text-align: center;
+}
+
+.searchHistorylist {
+    text-align: center;
+    padding: 2px;
+}
+
+#searchLabel {
+    font-size: x-large;
+}
+
+#forecastcard {
+    background-color: #014f9d;
+    color: white;
 }

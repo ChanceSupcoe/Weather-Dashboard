@@ -19,12 +19,13 @@
                 <div class="col-3">
                     <form>
                         <div class="mb-3">
-                          <label for="cityName" class="form-label">Search for a City</label>
+                          <label for="cityName" class="form-label" id="searchLabel">Search for a City</label>
                           <input type="text" class="form-text" id="cityInput" placeholder="City Name">
                         </div>
                         <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
                       </form>
-                
+                    <br>
+                    <br>
                     <ul class="searchHistorylist">
                         
                     </ul>
@@ -34,13 +35,13 @@
                 <div class="col-9">
                     <div class="card">
                         <div class="card-body" id="currentWeather">
-                            <p id="currentCity">City:  </p>
-                            <p id="currentDate">Date:  </p>
-                            <p id="currentImage">Condition:  </p>
-                            <p id="currentTemp">Temp:  </p>
-                            <p id="currentWind">Wind:  </p>
-                            <p id="currentHumidity">Humidity:  </p>
-                            <p id="currentUV">UV Index:  </p>
+                            <p id="currentCity">City:  <span id="currentCityResponse"></span></p>
+                            <p id="currentDate">Date:  <span id="currentDateResponse"></span></p>
+                            <p id="currentImage">Condition: <span id="currentImageResponse"></span></p>
+                            <p id="currentTemp">Temp:  <span id="currentTempResponse"></span></p>
+                            <p id="currentWind">Wind:  <span id="currentWindResponse"></span></p>
+                            <p id="currentHumidity">Humidity:  <span id="currentHumidityResponse"></span></p>
+                            <p id="currentUV">UV Index:  <span id="currentUVResponse"></span></p>
                         </div>
                     </div>
             
@@ -49,60 +50,60 @@
                 <div class="row">
                     <h2 class="forecastheader">5 Day Forecast</h2>
                     <div class="col">
-                        <div class="card">
+                        <div class="card" id="forecastcard">
                             <div class="card-body">
-                                <p id="forecastDate0">Date: </p>
-                                <p id="forecastImage0">Condition: </p>
-                                <p id="forecastTemp0">Temp: </p>
-                                <p id="forecastWind0">Wind: </p>
-                                <p id="forecastHumidity0">Humidity: </p>
+                                <p id="forecastDate0">Date: <span id="forecastDate0Response"></span></p>
+                                <p id="forecastImage0">Condition: <span id="forecastImage0Response"></span></p>
+                                <p id="forecastTemp0">Temp: <span id="forecastTemp0Response"></span></p>
+                                <p id="forecastWind0">Wind: <span id="forecastWind0Response"></span></p>
+                                <p id="forecastHumidity0">Humidity: <span id="forecastHumidity0Response"></span></p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <div class="card" id="forecastcard">
                             <div class="card-body">
-                                <p id="forecastDate1">Date: </p>
-                                <p id="forecastImage1">Condition: </p>
-                                <p id="forecastTemp1">Temp: </p>
-                                <p id="forecastWind1">Wind: </p>
-                                <p id="forecastHumidity1">Humidity: </p>
+                                <p id="forecastDate1">Date: <span id="forecastDate1Response"></span></p>
+                                <p id="forecastImage1">Condition: <span id="forecastImage1Response"></span></p>
+                                <p id="forecastTemp1">Temp: <span id="forecastTemp1Response"></span></p>
+                                <p id="forecastWind1">Wind: <span id="forecastWind1Response"></span></p>
+                                <p id="forecastHumidity1">Humidity: <span id="forecastHumidity1Response"></span></p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <div class="card" id="forecastcard">
                             <div class="card-body">
-                                <p id="forecastDate2">Date: </p>
-                                <p id="forecastImage2">Condition: </p>
-                                <p id="forecastTemp2">Temp: </p>
-                                <p id="forecastWind2">Wind: </p>
-                                <p id="forecastHumidity2">Humidity: </p>
+                                <p id="forecastDate2">Date: <span id="forecastDate2Response"></span></p>
+                                <p id="forecastImage2">Condition: <span id="forecastImage2Response"></span></p>
+                                <p id="forecastTemp2">Temp: <span id="forecastTemp2Response"></span></p>
+                                <p id="forecastWind2">Wind: <span id="forecastWind2Response"></span></p>
+                                <p id="forecastHumidity2">Humidity: <span id="forecastHumidity2Response"></span></p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <div class="card" id="forecastcard">
                             <div class="card-body">
-                                <p id="forecastDate3">Date: </p>
-                                <p id="forecastImage3">Condition: </p>
-                                <p id="forecastTemp3">Temp: </p>
-                                <p id="forecastWind3">Wind: </p>
-                                <p id="forecastHumidity3">Humidity: </p>
+                                <p id="forecastDate3">Date: <span id="forecastDate3Response"></span></p>
+                                <p id="forecastImage3">Condition: <span id="forecastImage3Response"></span></p>
+                                <p id="forecastTemp3">Temp: <span id="forecastTemp3Response"></span></p>
+                                <p id="forecastWind3">Wind: <span id="forecastWind3Response"></span></p>
+                                <p id="forecastHumidity3">Humidity: <span id="forecastHumidity3Response"></span></p>
+                            </div>
+                        </div>
+                    </div><div class="col">
+                        <div class="card" id="forecastcard">
+                            <div class="card-body">
+                                <p id="forecastDate4">Date: <span id="forecastDate4Response"></span></p>
+                                <p id="forecastImage4">Condition: <span id="forecastImage4Response"></span></p>
+                                <p id="forecastTemp4">Temp: <span id="forecastTemp4Response"></span></p>
+                                <p id="forecastWind4">Wind: <span id="forecastWind4Response"></span></p>
+                                <p id="forecastHumidity4">Humidity: <span id="forecastHumidity4Response"></span></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <p id="forecastDate4">Date: </p>
-                                <p id="forecastImage4">Condition: </p>
-                                <p id="forecastTemp4">Temp: </p>
-                                <p id="forecastWind4">Wind: </p>
-                                <p id="forecastHumidity4">Humidity: </p>
-                            </div>
-                        </div>
-                    </div>
+                 
                 </div>
             </div>
        
